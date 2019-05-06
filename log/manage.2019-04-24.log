@@ -1,0 +1,548 @@
+640  [INFO ] 2019-04-24 17:13:04 [main] com.example.demo.DemoApplication - Starting DemoApplication on DESKTOP-21NIJ09 with PID 13464 (started by qwe in E:\工作文件存储目录\students)
+643  [DEBUG] 2019-04-24 17:13:04 [main] com.example.demo.DemoApplication - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+644  [INFO ] 2019-04-24 17:13:04 [main] com.example.demo.DemoApplication - No active profile set, falling back to default profiles: default
+1349 [DEBUG] 2019-04-24 17:13:05 [main] o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+1349 [DEBUG] 2019-04-24 17:13:05 [main] o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.demo'
+1356 [DEBUG] 2019-04-24 17:13:05 [main] org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+1359 [DEBUG] 2019-04-24 17:13:05 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\CourseMapper.class]
+1359 [DEBUG] 2019-04-24 17:13:05 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\StudentMapper.class]
+1359 [DEBUG] 2019-04-24 17:13:05 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\TeacherMapper.class]
+1359 [DEBUG] 2019-04-24 17:13:05 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\UserMapper.class]
+1360 [DEBUG] 2019-04-24 17:13:05 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'courseMapper' and 'com.example.demo.mapper.CourseMapper' mapperInterface
+1360 [DEBUG] 2019-04-24 17:13:05 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'courseMapper'.
+1360 [DEBUG] 2019-04-24 17:13:05 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'com.example.demo.mapper.StudentMapper' mapperInterface
+1360 [DEBUG] 2019-04-24 17:13:05 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'studentMapper'.
+1360 [DEBUG] 2019-04-24 17:13:05 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'teacherMapper' and 'com.example.demo.mapper.TeacherMapper' mapperInterface
+1360 [DEBUG] 2019-04-24 17:13:05 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'teacherMapper'.
+1361 [DEBUG] 2019-04-24 17:13:05 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface
+1361 [DEBUG] 2019-04-24 17:13:05 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+1857 [INFO ] 2019-04-24 17:13:05 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+1869 [INFO ] 2019-04-24 17:13:05 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+1876 [INFO ] 2019-04-24 17:13:05 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+1876 [INFO ] 2019-04-24 17:13:05 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+1881 [INFO ] 2019-04-24 17:13:05 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;";D:\Program Files\python\Pycharm 2018.3.5\jre64\\bin;D:\Program Files\python\Pycharm 2018.3.5\jre64\\jre\bin";D:\Program Files\Java\apache-maven-3.5.4\bin;D:\Program Files\Java\apache-tomcat-8.5.38\lib;D:\Program Files\Java\apache-tomcat-8.5.38\bin;D:\Program Files\Java\Git\cmd;C:\Program Files (x86)\Rational\common;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\python\Scripts\;D:\Program Files\python\;C:\Users\qwe\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.5\bin;D:\Program Files\python\PyCharm 2018.3.5\bin;D:\BaiduNetdisk\Fiddler;C:\Users\qwe\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\bin;.]
+1982 [INFO ] 2019-04-24 17:13:05 [main] o.a.c.c.C.[.[.[/demo-0.0.1-SNAPSHOT] - Initializing Spring embedded WebApplicationContext
+1982 [INFO ] 2019-04-24 17:13:05 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1271 ms
+2133 [DEBUG] 2019-04-24 17:13:06 [main] org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2135 [DEBUG] 2019-04-24 17:13:06 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.ChooseCourse matches criteria [is assignable to Object]
+2135 [DEBUG] 2019-04-24 17:13:06 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Course matches criteria [is assignable to Object]
+2135 [DEBUG] 2019-04-24 17:13:06 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Student matches criteria [is assignable to Object]
+2135 [DEBUG] 2019-04-24 17:13:06 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Teacher matches criteria [is assignable to Object]
+2135 [DEBUG] 2019-04-24 17:13:06 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.TeacherSeeCourseList matches criteria [is assignable to Object]
+2135 [DEBUG] 2019-04-24 17:13:06 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.User matches criteria [is assignable to Object]
+2136 [DEBUG] 2019-04-24 17:13:06 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.adminSeeStudentChooseCourseMsg matches criteria [is assignable to Object]
+2136 [DEBUG] 2019-04-24 17:13:06 [main] o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.example.demo.entity' for aliases
+2245 [DEBUG] 2019-04-24 17:13:06 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\CourseMapper.xml]'
+2252 [DEBUG] 2019-04-24 17:13:06 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\StudentMapper.xml]'
+2258 [DEBUG] 2019-04-24 17:13:06 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\TeacherMapper.xml]'
+2265 [DEBUG] 2019-04-24 17:13:06 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\UserMapper.xml]'
+2429 [INFO ] 2019-04-24 17:13:06 [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2519 [DEBUG] 2019-04-24 17:13:06 [main] o.m.s.b.a.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2597 [INFO ] 2019-04-24 17:13:06 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2607 [ERROR] 2019-04-24 17:13:06 [main] o.apache.catalina.util.LifecycleBase - Failed to start component [Connector[HTTP/1.1-8888]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:14)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2610 [INFO ] 2019-04-24 17:13:06 [main] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8888"]
+2611 [INFO ] 2019-04-24 17:13:06 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2614 [INFO ] 2019-04-24 17:13:06 [main] o.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2615 [INFO ] 2019-04-24 17:13:06 [main] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8888"]
+2615 [INFO ] 2019-04-24 17:13:06 [main] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8888"]
+2616 [INFO ] 2019-04-24 17:13:06 [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2619 [ERROR] 2019-04-24 17:13:06 [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8888 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8888, or configure this application to listen on another port.
+
+2621 [INFO ] 2019-04-24 17:13:06 [main] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+472  [INFO ] 2019-04-24 17:13:17 [main] com.example.demo.DemoApplication - Starting DemoApplication on DESKTOP-21NIJ09 with PID 4900 (started by qwe in E:\工作文件存储目录\students)
+475  [DEBUG] 2019-04-24 17:13:17 [main] com.example.demo.DemoApplication - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+475  [INFO ] 2019-04-24 17:13:17 [main] com.example.demo.DemoApplication - No active profile set, falling back to default profiles: default
+983  [DEBUG] 2019-04-24 17:13:18 [main] o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+983  [DEBUG] 2019-04-24 17:13:18 [main] o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.demo'
+988  [DEBUG] 2019-04-24 17:13:18 [main] org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+991  [DEBUG] 2019-04-24 17:13:18 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\CourseMapper.class]
+991  [DEBUG] 2019-04-24 17:13:18 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\StudentMapper.class]
+992  [DEBUG] 2019-04-24 17:13:18 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\TeacherMapper.class]
+992  [DEBUG] 2019-04-24 17:13:18 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\UserMapper.class]
+992  [DEBUG] 2019-04-24 17:13:18 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'courseMapper' and 'com.example.demo.mapper.CourseMapper' mapperInterface
+992  [DEBUG] 2019-04-24 17:13:18 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'courseMapper'.
+993  [DEBUG] 2019-04-24 17:13:18 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'com.example.demo.mapper.StudentMapper' mapperInterface
+993  [DEBUG] 2019-04-24 17:13:18 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'studentMapper'.
+993  [DEBUG] 2019-04-24 17:13:18 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'teacherMapper' and 'com.example.demo.mapper.TeacherMapper' mapperInterface
+993  [DEBUG] 2019-04-24 17:13:18 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'teacherMapper'.
+993  [DEBUG] 2019-04-24 17:13:18 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface
+993  [DEBUG] 2019-04-24 17:13:18 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+1407 [INFO ] 2019-04-24 17:13:18 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+1416 [INFO ] 2019-04-24 17:13:18 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+1422 [INFO ] 2019-04-24 17:13:18 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+1422 [INFO ] 2019-04-24 17:13:18 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+1427 [INFO ] 2019-04-24 17:13:18 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;";D:\Program Files\python\Pycharm 2018.3.5\jre64\\bin;D:\Program Files\python\Pycharm 2018.3.5\jre64\\jre\bin";D:\Program Files\Java\apache-maven-3.5.4\bin;D:\Program Files\Java\apache-tomcat-8.5.38\lib;D:\Program Files\Java\apache-tomcat-8.5.38\bin;D:\Program Files\Java\Git\cmd;C:\Program Files (x86)\Rational\common;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\python\Scripts\;D:\Program Files\python\;C:\Users\qwe\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.5\bin;D:\Program Files\python\PyCharm 2018.3.5\bin;D:\BaiduNetdisk\Fiddler;C:\Users\qwe\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\bin;.]
+1520 [INFO ] 2019-04-24 17:13:18 [main] o.a.c.c.C.[.[.[/demo-0.0.1-SNAPSHOT] - Initializing Spring embedded WebApplicationContext
+1520 [INFO ] 2019-04-24 17:13:18 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1007 ms
+1632 [DEBUG] 2019-04-24 17:13:18 [main] org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+1634 [DEBUG] 2019-04-24 17:13:18 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.ChooseCourse matches criteria [is assignable to Object]
+1634 [DEBUG] 2019-04-24 17:13:18 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Course matches criteria [is assignable to Object]
+1634 [DEBUG] 2019-04-24 17:13:18 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Student matches criteria [is assignable to Object]
+1634 [DEBUG] 2019-04-24 17:13:18 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Teacher matches criteria [is assignable to Object]
+1634 [DEBUG] 2019-04-24 17:13:18 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.TeacherSeeCourseList matches criteria [is assignable to Object]
+1635 [DEBUG] 2019-04-24 17:13:18 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.User matches criteria [is assignable to Object]
+1635 [DEBUG] 2019-04-24 17:13:18 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.adminSeeStudentChooseCourseMsg matches criteria [is assignable to Object]
+1636 [DEBUG] 2019-04-24 17:13:18 [main] o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.example.demo.entity' for aliases
+1737 [DEBUG] 2019-04-24 17:13:18 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\CourseMapper.xml]'
+1745 [DEBUG] 2019-04-24 17:13:18 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\StudentMapper.xml]'
+1750 [DEBUG] 2019-04-24 17:13:18 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\TeacherMapper.xml]'
+1757 [DEBUG] 2019-04-24 17:13:18 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\UserMapper.xml]'
+1891 [INFO ] 2019-04-24 17:13:19 [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+1977 [DEBUG] 2019-04-24 17:13:19 [main] o.m.s.b.a.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2049 [INFO ] 2019-04-24 17:13:19 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2058 [ERROR] 2019-04-24 17:13:19 [main] o.apache.catalina.util.LifecycleBase - Failed to start component [Connector[HTTP/1.1-8888]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:14)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2061 [INFO ] 2019-04-24 17:13:19 [main] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8888"]
+2062 [INFO ] 2019-04-24 17:13:19 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2066 [INFO ] 2019-04-24 17:13:19 [main] o.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2066 [INFO ] 2019-04-24 17:13:19 [main] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8888"]
+2066 [INFO ] 2019-04-24 17:13:19 [main] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8888"]
+2068 [INFO ] 2019-04-24 17:13:19 [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2071 [ERROR] 2019-04-24 17:13:19 [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8888 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8888, or configure this application to listen on another port.
+
+2072 [INFO ] 2019-04-24 17:13:19 [main] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+477  [INFO ] 2019-04-24 17:14:27 [main] com.example.demo.DemoApplication - Starting DemoApplication on DESKTOP-21NIJ09 with PID 7420 (started by qwe in E:\工作文件存储目录\students)
+480  [DEBUG] 2019-04-24 17:14:27 [main] com.example.demo.DemoApplication - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+481  [INFO ] 2019-04-24 17:14:27 [main] com.example.demo.DemoApplication - No active profile set, falling back to default profiles: default
+1016 [DEBUG] 2019-04-24 17:14:27 [main] o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+1016 [DEBUG] 2019-04-24 17:14:27 [main] o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.demo'
+1020 [DEBUG] 2019-04-24 17:14:27 [main] org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+1024 [DEBUG] 2019-04-24 17:14:27 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\CourseMapper.class]
+1024 [DEBUG] 2019-04-24 17:14:27 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\StudentMapper.class]
+1024 [DEBUG] 2019-04-24 17:14:27 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\TeacherMapper.class]
+1024 [DEBUG] 2019-04-24 17:14:27 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\UserMapper.class]
+1025 [DEBUG] 2019-04-24 17:14:27 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'courseMapper' and 'com.example.demo.mapper.CourseMapper' mapperInterface
+1025 [DEBUG] 2019-04-24 17:14:27 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'courseMapper'.
+1025 [DEBUG] 2019-04-24 17:14:27 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'com.example.demo.mapper.StudentMapper' mapperInterface
+1025 [DEBUG] 2019-04-24 17:14:27 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'studentMapper'.
+1025 [DEBUG] 2019-04-24 17:14:27 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'teacherMapper' and 'com.example.demo.mapper.TeacherMapper' mapperInterface
+1025 [DEBUG] 2019-04-24 17:14:27 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'teacherMapper'.
+1025 [DEBUG] 2019-04-24 17:14:27 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface
+1025 [DEBUG] 2019-04-24 17:14:27 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+1431 [INFO ] 2019-04-24 17:14:28 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+1440 [INFO ] 2019-04-24 17:14:28 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+1445 [INFO ] 2019-04-24 17:14:28 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+1446 [INFO ] 2019-04-24 17:14:28 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+1450 [INFO ] 2019-04-24 17:14:28 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;";D:\Program Files\python\Pycharm 2018.3.5\jre64\\bin;D:\Program Files\python\Pycharm 2018.3.5\jre64\\jre\bin";D:\Program Files\Java\apache-maven-3.5.4\bin;D:\Program Files\Java\apache-tomcat-8.5.38\lib;D:\Program Files\Java\apache-tomcat-8.5.38\bin;D:\Program Files\Java\Git\cmd;C:\Program Files (x86)\Rational\common;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\python\Scripts\;D:\Program Files\python\;C:\Users\qwe\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.5\bin;D:\Program Files\python\PyCharm 2018.3.5\bin;D:\BaiduNetdisk\Fiddler;C:\Users\qwe\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\bin;.]
+1543 [INFO ] 2019-04-24 17:14:28 [main] o.a.c.c.C.[.[.[/demo-0.0.1-SNAPSHOT] - Initializing Spring embedded WebApplicationContext
+1543 [INFO ] 2019-04-24 17:14:28 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1032 ms
+1651 [DEBUG] 2019-04-24 17:14:28 [main] org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+1652 [DEBUG] 2019-04-24 17:14:28 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.ChooseCourse matches criteria [is assignable to Object]
+1653 [DEBUG] 2019-04-24 17:14:28 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Course matches criteria [is assignable to Object]
+1653 [DEBUG] 2019-04-24 17:14:28 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Student matches criteria [is assignable to Object]
+1653 [DEBUG] 2019-04-24 17:14:28 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Teacher matches criteria [is assignable to Object]
+1653 [DEBUG] 2019-04-24 17:14:28 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.TeacherSeeCourseList matches criteria [is assignable to Object]
+1653 [DEBUG] 2019-04-24 17:14:28 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.User matches criteria [is assignable to Object]
+1653 [DEBUG] 2019-04-24 17:14:28 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.adminSeeStudentChooseCourseMsg matches criteria [is assignable to Object]
+1654 [DEBUG] 2019-04-24 17:14:28 [main] o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.example.demo.entity' for aliases
+1756 [DEBUG] 2019-04-24 17:14:28 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\CourseMapper.xml]'
+1764 [DEBUG] 2019-04-24 17:14:28 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\StudentMapper.xml]'
+1769 [DEBUG] 2019-04-24 17:14:28 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\TeacherMapper.xml]'
+1776 [DEBUG] 2019-04-24 17:14:28 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\UserMapper.xml]'
+1906 [INFO ] 2019-04-24 17:14:28 [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+1990 [DEBUG] 2019-04-24 17:14:28 [main] o.m.s.b.a.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2057 [INFO ] 2019-04-24 17:14:28 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2065 [ERROR] 2019-04-24 17:14:28 [main] o.apache.catalina.util.LifecycleBase - Failed to start component [Connector[HTTP/1.1-8888]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:14)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2068 [INFO ] 2019-04-24 17:14:28 [main] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8888"]
+2069 [INFO ] 2019-04-24 17:14:28 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2072 [INFO ] 2019-04-24 17:14:28 [main] o.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2073 [INFO ] 2019-04-24 17:14:28 [main] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8888"]
+2073 [INFO ] 2019-04-24 17:14:28 [main] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8888"]
+2074 [INFO ] 2019-04-24 17:14:28 [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2077 [ERROR] 2019-04-24 17:14:28 [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8888 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8888, or configure this application to listen on another port.
+
+2079 [INFO ] 2019-04-24 17:14:28 [main] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+487  [INFO ] 2019-04-24 17:15:47 [main] com.example.demo.DemoApplication - Starting DemoApplication on DESKTOP-21NIJ09 with PID 14644 (started by qwe in E:\工作文件存储目录\students)
+489  [DEBUG] 2019-04-24 17:15:47 [main] com.example.demo.DemoApplication - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+489  [INFO ] 2019-04-24 17:15:47 [main] com.example.demo.DemoApplication - No active profile set, falling back to default profiles: default
+920  [DEBUG] 2019-04-24 17:15:47 [main] o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+921  [DEBUG] 2019-04-24 17:15:47 [main] o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.demo'
+925  [DEBUG] 2019-04-24 17:15:47 [main] org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+929  [DEBUG] 2019-04-24 17:15:47 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\CourseMapper.class]
+929  [DEBUG] 2019-04-24 17:15:47 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\StudentMapper.class]
+929  [DEBUG] 2019-04-24 17:15:47 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\TeacherMapper.class]
+929  [DEBUG] 2019-04-24 17:15:47 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\UserMapper.class]
+930  [DEBUG] 2019-04-24 17:15:47 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'courseMapper' and 'com.example.demo.mapper.CourseMapper' mapperInterface
+930  [DEBUG] 2019-04-24 17:15:47 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'courseMapper'.
+930  [DEBUG] 2019-04-24 17:15:47 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'com.example.demo.mapper.StudentMapper' mapperInterface
+930  [DEBUG] 2019-04-24 17:15:47 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'studentMapper'.
+930  [DEBUG] 2019-04-24 17:15:47 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'teacherMapper' and 'com.example.demo.mapper.TeacherMapper' mapperInterface
+930  [DEBUG] 2019-04-24 17:15:47 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'teacherMapper'.
+930  [DEBUG] 2019-04-24 17:15:47 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface
+930  [DEBUG] 2019-04-24 17:15:47 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+1358 [INFO ] 2019-04-24 17:15:48 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+1366 [INFO ] 2019-04-24 17:15:48 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+1372 [INFO ] 2019-04-24 17:15:48 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+1372 [INFO ] 2019-04-24 17:15:48 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+1377 [INFO ] 2019-04-24 17:15:48 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;";D:\Program Files\python\Pycharm 2018.3.5\jre64\\bin;D:\Program Files\python\Pycharm 2018.3.5\jre64\\jre\bin";D:\Program Files\Java\apache-maven-3.5.4\bin;D:\Program Files\Java\apache-tomcat-8.5.38\lib;D:\Program Files\Java\apache-tomcat-8.5.38\bin;D:\Program Files\Java\Git\cmd;C:\Program Files (x86)\Rational\common;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\python\Scripts\;D:\Program Files\python\;C:\Users\qwe\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.5\bin;D:\Program Files\python\PyCharm 2018.3.5\bin;D:\BaiduNetdisk\Fiddler;C:\Users\qwe\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\bin;.]
+1470 [INFO ] 2019-04-24 17:15:48 [main] o.a.c.c.C.[.[.[/demo-0.0.1-SNAPSHOT] - Initializing Spring embedded WebApplicationContext
+1470 [INFO ] 2019-04-24 17:15:48 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 928 ms
+1589 [DEBUG] 2019-04-24 17:15:48 [main] org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+1591 [DEBUG] 2019-04-24 17:15:48 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.ChooseCourse matches criteria [is assignable to Object]
+1591 [DEBUG] 2019-04-24 17:15:48 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Course matches criteria [is assignable to Object]
+1591 [DEBUG] 2019-04-24 17:15:48 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Student matches criteria [is assignable to Object]
+1591 [DEBUG] 2019-04-24 17:15:48 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Teacher matches criteria [is assignable to Object]
+1591 [DEBUG] 2019-04-24 17:15:48 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.TeacherSeeCourseList matches criteria [is assignable to Object]
+1592 [DEBUG] 2019-04-24 17:15:48 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.User matches criteria [is assignable to Object]
+1592 [DEBUG] 2019-04-24 17:15:48 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.adminSeeStudentChooseCourseMsg matches criteria [is assignable to Object]
+1593 [DEBUG] 2019-04-24 17:15:48 [main] o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.example.demo.entity' for aliases
+1705 [DEBUG] 2019-04-24 17:15:48 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\CourseMapper.xml]'
+1712 [DEBUG] 2019-04-24 17:15:48 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\StudentMapper.xml]'
+1717 [DEBUG] 2019-04-24 17:15:48 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\TeacherMapper.xml]'
+1724 [DEBUG] 2019-04-24 17:15:48 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\UserMapper.xml]'
+1859 [INFO ] 2019-04-24 17:15:48 [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+1946 [DEBUG] 2019-04-24 17:15:48 [main] o.m.s.b.a.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2012 [INFO ] 2019-04-24 17:15:48 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020 [ERROR] 2019-04-24 17:15:48 [main] o.apache.catalina.util.LifecycleBase - Failed to start component [Connector[HTTP/1.1-8888]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:14)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2024 [INFO ] 2019-04-24 17:15:48 [main] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8888"]
+2024 [INFO ] 2019-04-24 17:15:48 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2028 [INFO ] 2019-04-24 17:15:48 [main] o.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2028 [INFO ] 2019-04-24 17:15:48 [main] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8888"]
+2028 [INFO ] 2019-04-24 17:15:48 [main] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8888"]
+2030 [INFO ] 2019-04-24 17:15:48 [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2033 [ERROR] 2019-04-24 17:15:48 [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8888 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8888, or configure this application to listen on another port.
+
+2034 [INFO ] 2019-04-24 17:15:48 [main] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+454  [INFO ] 2019-04-24 17:21:23 [main] com.example.demo.DemoApplication - Starting DemoApplication on DESKTOP-21NIJ09 with PID 14364 (started by qwe in E:\工作文件存储目录\students)
+456  [DEBUG] 2019-04-24 17:21:23 [main] com.example.demo.DemoApplication - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+456  [INFO ] 2019-04-24 17:21:23 [main] com.example.demo.DemoApplication - No active profile set, falling back to default profiles: default
+972  [DEBUG] 2019-04-24 17:21:24 [main] o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+973  [DEBUG] 2019-04-24 17:21:24 [main] o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.demo'
+977  [DEBUG] 2019-04-24 17:21:24 [main] org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+981  [DEBUG] 2019-04-24 17:21:24 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\CourseMapper.class]
+981  [DEBUG] 2019-04-24 17:21:24 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\StudentMapper.class]
+981  [DEBUG] 2019-04-24 17:21:24 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\TeacherMapper.class]
+982  [DEBUG] 2019-04-24 17:21:24 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\UserMapper.class]
+982  [DEBUG] 2019-04-24 17:21:24 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'courseMapper' and 'com.example.demo.mapper.CourseMapper' mapperInterface
+982  [DEBUG] 2019-04-24 17:21:24 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'courseMapper'.
+982  [DEBUG] 2019-04-24 17:21:24 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'com.example.demo.mapper.StudentMapper' mapperInterface
+983  [DEBUG] 2019-04-24 17:21:24 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'studentMapper'.
+983  [DEBUG] 2019-04-24 17:21:24 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'teacherMapper' and 'com.example.demo.mapper.TeacherMapper' mapperInterface
+983  [DEBUG] 2019-04-24 17:21:24 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'teacherMapper'.
+983  [DEBUG] 2019-04-24 17:21:24 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface
+983  [DEBUG] 2019-04-24 17:21:24 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+1410 [INFO ] 2019-04-24 17:21:24 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+1420 [INFO ] 2019-04-24 17:21:24 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+1426 [INFO ] 2019-04-24 17:21:24 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+1426 [INFO ] 2019-04-24 17:21:24 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+1432 [INFO ] 2019-04-24 17:21:24 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;";D:\Program Files\python\Pycharm 2018.3.5\jre64\\bin;D:\Program Files\python\Pycharm 2018.3.5\jre64\\jre\bin";D:\Program Files\Java\apache-maven-3.5.4\bin;D:\Program Files\Java\apache-tomcat-8.5.38\lib;D:\Program Files\Java\apache-tomcat-8.5.38\bin;D:\Program Files\Java\Git\cmd;C:\Program Files (x86)\Rational\common;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\python\Scripts\;D:\Program Files\python\;C:\Users\qwe\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.5\bin;D:\Program Files\python\PyCharm 2018.3.5\bin;D:\BaiduNetdisk\Fiddler;C:\Users\qwe\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\bin;.]
+1527 [INFO ] 2019-04-24 17:21:24 [main] o.a.c.c.C.[.[.[/demo-0.0.1-SNAPSHOT] - Initializing Spring embedded WebApplicationContext
+1527 [INFO ] 2019-04-24 17:21:24 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1041 ms
+1648 [DEBUG] 2019-04-24 17:21:24 [main] org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+1649 [DEBUG] 2019-04-24 17:21:24 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.ChooseCourse matches criteria [is assignable to Object]
+1650 [DEBUG] 2019-04-24 17:21:24 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Course matches criteria [is assignable to Object]
+1650 [DEBUG] 2019-04-24 17:21:24 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Student matches criteria [is assignable to Object]
+1650 [DEBUG] 2019-04-24 17:21:24 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Teacher matches criteria [is assignable to Object]
+1650 [DEBUG] 2019-04-24 17:21:24 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.TeacherSeeCourseList matches criteria [is assignable to Object]
+1650 [DEBUG] 2019-04-24 17:21:24 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.User matches criteria [is assignable to Object]
+1651 [DEBUG] 2019-04-24 17:21:24 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.adminSeeStudentChooseCourseMsg matches criteria [is assignable to Object]
+1652 [DEBUG] 2019-04-24 17:21:24 [main] o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.example.demo.entity' for aliases
+1760 [DEBUG] 2019-04-24 17:21:24 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\CourseMapper.xml]'
+1767 [DEBUG] 2019-04-24 17:21:24 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\StudentMapper.xml]'
+1773 [DEBUG] 2019-04-24 17:21:24 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\TeacherMapper.xml]'
+1780 [DEBUG] 2019-04-24 17:21:24 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\UserMapper.xml]'
+1925 [INFO ] 2019-04-24 17:21:24 [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2008 [DEBUG] 2019-04-24 17:21:25 [main] o.m.s.b.a.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2077 [INFO ] 2019-04-24 17:21:25 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2099 [INFO ] 2019-04-24 17:21:25 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/demo-0.0.1-SNAPSHOT'
+2101 [INFO ] 2019-04-24 17:21:25 [main] com.example.demo.DemoApplication - Started DemoApplication in 2.003 seconds (JVM running for 2.762)
+534  [INFO ] 2019-04-24 18:02:28 [main] com.example.demo.DemoApplication - Starting DemoApplication on DESKTOP-21NIJ09 with PID 3400 (started by qwe in E:\工作文件存储目录\students)
+536  [DEBUG] 2019-04-24 18:02:28 [main] com.example.demo.DemoApplication - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+536  [INFO ] 2019-04-24 18:02:28 [main] com.example.demo.DemoApplication - No active profile set, falling back to default profiles: default
+1022 [DEBUG] 2019-04-24 18:02:29 [main] o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+1022 [DEBUG] 2019-04-24 18:02:29 [main] o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.demo'
+1026 [DEBUG] 2019-04-24 18:02:29 [main] org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+1030 [DEBUG] 2019-04-24 18:02:29 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\CourseMapper.class]
+1030 [DEBUG] 2019-04-24 18:02:29 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\StudentMapper.class]
+1030 [DEBUG] 2019-04-24 18:02:29 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\TeacherMapper.class]
+1030 [DEBUG] 2019-04-24 18:02:29 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\UserMapper.class]
+1031 [DEBUG] 2019-04-24 18:02:29 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'courseMapper' and 'com.example.demo.mapper.CourseMapper' mapperInterface
+1031 [DEBUG] 2019-04-24 18:02:29 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'courseMapper'.
+1031 [DEBUG] 2019-04-24 18:02:29 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'com.example.demo.mapper.StudentMapper' mapperInterface
+1031 [DEBUG] 2019-04-24 18:02:29 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'studentMapper'.
+1031 [DEBUG] 2019-04-24 18:02:29 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'teacherMapper' and 'com.example.demo.mapper.TeacherMapper' mapperInterface
+1031 [DEBUG] 2019-04-24 18:02:29 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'teacherMapper'.
+1031 [DEBUG] 2019-04-24 18:02:29 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface
+1031 [DEBUG] 2019-04-24 18:02:29 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+1430 [INFO ] 2019-04-24 18:02:29 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+1439 [INFO ] 2019-04-24 18:02:29 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+1445 [INFO ] 2019-04-24 18:02:29 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+1445 [INFO ] 2019-04-24 18:02:29 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+1450 [INFO ] 2019-04-24 18:02:29 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;";D:\Program Files\python\Pycharm 2018.3.5\jre64\\bin;D:\Program Files\python\Pycharm 2018.3.5\jre64\\jre\bin";D:\Program Files\Java\apache-maven-3.5.4\bin;D:\Program Files\Java\apache-tomcat-8.5.38\lib;D:\Program Files\Java\apache-tomcat-8.5.38\bin;D:\Program Files\Java\Git\cmd;C:\Program Files (x86)\Rational\common;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\python\Scripts\;D:\Program Files\python\;C:\Users\qwe\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.5\bin;D:\Program Files\python\PyCharm 2018.3.5\bin;D:\BaiduNetdisk\Fiddler;C:\Users\qwe\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\bin;.]
+1541 [INFO ] 2019-04-24 18:02:29 [main] o.a.c.c.C.[.[.[/demo-0.0.1-SNAPSHOT] - Initializing Spring embedded WebApplicationContext
+1542 [INFO ] 2019-04-24 18:02:29 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 937 ms
+1652 [DEBUG] 2019-04-24 18:02:30 [main] org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+1654 [DEBUG] 2019-04-24 18:02:30 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.ChooseCourse matches criteria [is assignable to Object]
+1654 [DEBUG] 2019-04-24 18:02:30 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Course matches criteria [is assignable to Object]
+1654 [DEBUG] 2019-04-24 18:02:30 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Student matches criteria [is assignable to Object]
+1654 [DEBUG] 2019-04-24 18:02:30 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Teacher matches criteria [is assignable to Object]
+1654 [DEBUG] 2019-04-24 18:02:30 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.TeacherSeeCourseList matches criteria [is assignable to Object]
+1654 [DEBUG] 2019-04-24 18:02:30 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.User matches criteria [is assignable to Object]
+1655 [DEBUG] 2019-04-24 18:02:30 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.adminSeeStudentChooseCourseMsg matches criteria [is assignable to Object]
+1655 [DEBUG] 2019-04-24 18:02:30 [main] o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.example.demo.entity' for aliases
+1758 [DEBUG] 2019-04-24 18:02:30 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\CourseMapper.xml]'
+1765 [DEBUG] 2019-04-24 18:02:30 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\StudentMapper.xml]'
+1771 [DEBUG] 2019-04-24 18:02:30 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\TeacherMapper.xml]'
+1777 [DEBUG] 2019-04-24 18:02:30 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\UserMapper.xml]'
+1907 [INFO ] 2019-04-24 18:02:30 [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+1993 [DEBUG] 2019-04-24 18:02:30 [main] o.m.s.b.a.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2060 [INFO ] 2019-04-24 18:02:30 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2077 [INFO ] 2019-04-24 18:02:30 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/demo-0.0.1-SNAPSHOT'
+2079 [INFO ] 2019-04-24 18:02:30 [main] com.example.demo.DemoApplication - Started DemoApplication in 1.968 seconds (JVM running for 2.927)
+485  [INFO ] 2019-04-24 18:05:33 [main] com.example.demo.DemoApplication - Starting DemoApplication on DESKTOP-21NIJ09 with PID 4624 (started by qwe in E:\工作文件存储目录\students)
+488  [DEBUG] 2019-04-24 18:05:33 [main] com.example.demo.DemoApplication - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+488  [INFO ] 2019-04-24 18:05:33 [main] com.example.demo.DemoApplication - No active profile set, falling back to default profiles: default
+990  [DEBUG] 2019-04-24 18:05:33 [main] o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+990  [DEBUG] 2019-04-24 18:05:33 [main] o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.demo'
+994  [DEBUG] 2019-04-24 18:05:33 [main] org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+998  [DEBUG] 2019-04-24 18:05:33 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\CourseMapper.class]
+998  [DEBUG] 2019-04-24 18:05:33 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\StudentMapper.class]
+999  [DEBUG] 2019-04-24 18:05:33 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\TeacherMapper.class]
+999  [DEBUG] 2019-04-24 18:05:33 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\UserMapper.class]
+999  [DEBUG] 2019-04-24 18:05:33 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'courseMapper' and 'com.example.demo.mapper.CourseMapper' mapperInterface
+999  [DEBUG] 2019-04-24 18:05:33 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'courseMapper'.
+999  [DEBUG] 2019-04-24 18:05:33 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'com.example.demo.mapper.StudentMapper' mapperInterface
+1000 [DEBUG] 2019-04-24 18:05:33 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'studentMapper'.
+1000 [DEBUG] 2019-04-24 18:05:33 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'teacherMapper' and 'com.example.demo.mapper.TeacherMapper' mapperInterface
+1000 [DEBUG] 2019-04-24 18:05:33 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'teacherMapper'.
+1000 [DEBUG] 2019-04-24 18:05:33 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface
+1000 [DEBUG] 2019-04-24 18:05:33 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+1399 [INFO ] 2019-04-24 18:05:34 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+1408 [INFO ] 2019-04-24 18:05:34 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+1414 [INFO ] 2019-04-24 18:05:34 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+1414 [INFO ] 2019-04-24 18:05:34 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+1419 [INFO ] 2019-04-24 18:05:34 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;";D:\Program Files\python\Pycharm 2018.3.5\jre64\\bin;D:\Program Files\python\Pycharm 2018.3.5\jre64\\jre\bin";D:\Program Files\Java\apache-maven-3.5.4\bin;D:\Program Files\Java\apache-tomcat-8.5.38\lib;D:\Program Files\Java\apache-tomcat-8.5.38\bin;D:\Program Files\Java\Git\cmd;C:\Program Files (x86)\Rational\common;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\python\Scripts\;D:\Program Files\python\;C:\Users\qwe\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.5\bin;D:\Program Files\python\PyCharm 2018.3.5\bin;D:\BaiduNetdisk\Fiddler;C:\Users\qwe\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\bin;.]
+1511 [INFO ] 2019-04-24 18:05:34 [main] o.a.c.c.C.[.[.[/demo-0.0.1-SNAPSHOT] - Initializing Spring embedded WebApplicationContext
+1511 [INFO ] 2019-04-24 18:05:34 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 986 ms
+1622 [DEBUG] 2019-04-24 18:05:34 [main] org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+1623 [DEBUG] 2019-04-24 18:05:34 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.ChooseCourse matches criteria [is assignable to Object]
+1623 [DEBUG] 2019-04-24 18:05:34 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Course matches criteria [is assignable to Object]
+1623 [DEBUG] 2019-04-24 18:05:34 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Student matches criteria [is assignable to Object]
+1623 [DEBUG] 2019-04-24 18:05:34 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Teacher matches criteria [is assignable to Object]
+1623 [DEBUG] 2019-04-24 18:05:34 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.TeacherSeeCourseList matches criteria [is assignable to Object]
+1624 [DEBUG] 2019-04-24 18:05:34 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.User matches criteria [is assignable to Object]
+1624 [DEBUG] 2019-04-24 18:05:34 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.adminSeeStudentChooseCourseMsg matches criteria [is assignable to Object]
+1625 [DEBUG] 2019-04-24 18:05:34 [main] o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.example.demo.entity' for aliases
+1728 [DEBUG] 2019-04-24 18:05:34 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\CourseMapper.xml]'
+1735 [DEBUG] 2019-04-24 18:05:34 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\StudentMapper.xml]'
+1740 [DEBUG] 2019-04-24 18:05:34 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\TeacherMapper.xml]'
+1746 [DEBUG] 2019-04-24 18:05:34 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\UserMapper.xml]'
+1874 [INFO ] 2019-04-24 18:05:34 [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+1959 [DEBUG] 2019-04-24 18:05:34 [main] o.m.s.b.a.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2028 [INFO ] 2019-04-24 18:05:34 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2044 [INFO ] 2019-04-24 18:05:34 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/demo-0.0.1-SNAPSHOT'
+2046 [INFO ] 2019-04-24 18:05:34 [main] com.example.demo.DemoApplication - Started DemoApplication in 1.947 seconds (JVM running for 2.592)
+525  [INFO ] 2019-04-24 19:09:23 [main] com.example.demo.DemoApplication - Starting DemoApplication on DESKTOP-21NIJ09 with PID 9148 (started by qwe in E:\工作文件存储目录\students)
+527  [DEBUG] 2019-04-24 19:09:23 [main] com.example.demo.DemoApplication - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+528  [INFO ] 2019-04-24 19:09:23 [main] com.example.demo.DemoApplication - No active profile set, falling back to default profiles: default
+1073 [DEBUG] 2019-04-24 19:09:24 [main] o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+1074 [DEBUG] 2019-04-24 19:09:24 [main] o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.demo'
+1078 [DEBUG] 2019-04-24 19:09:24 [main] org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+1082 [DEBUG] 2019-04-24 19:09:24 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\CourseMapper.class]
+1082 [DEBUG] 2019-04-24 19:09:24 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\StudentMapper.class]
+1082 [DEBUG] 2019-04-24 19:09:24 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\TeacherMapper.class]
+1082 [DEBUG] 2019-04-24 19:09:24 [main] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\工作文件存储目录\students\target\classes\com\example\demo\mapper\UserMapper.class]
+1083 [DEBUG] 2019-04-24 19:09:24 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'courseMapper' and 'com.example.demo.mapper.CourseMapper' mapperInterface
+1083 [DEBUG] 2019-04-24 19:09:24 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'courseMapper'.
+1083 [DEBUG] 2019-04-24 19:09:24 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'studentMapper' and 'com.example.demo.mapper.StudentMapper' mapperInterface
+1083 [DEBUG] 2019-04-24 19:09:24 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'studentMapper'.
+1083 [DEBUG] 2019-04-24 19:09:24 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'teacherMapper' and 'com.example.demo.mapper.TeacherMapper' mapperInterface
+1083 [DEBUG] 2019-04-24 19:09:24 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'teacherMapper'.
+1083 [DEBUG] 2019-04-24 19:09:24 [main] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface
+1083 [DEBUG] 2019-04-24 19:09:24 [main] o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+1486 [INFO ] 2019-04-24 19:09:24 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+1496 [INFO ] 2019-04-24 19:09:24 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+1502 [INFO ] 2019-04-24 19:09:24 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+1502 [INFO ] 2019-04-24 19:09:24 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+1507 [INFO ] 2019-04-24 19:09:24 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;";D:\Program Files\python\Pycharm 2018.3.5\jre64\\bin;D:\Program Files\python\Pycharm 2018.3.5\jre64\\jre\bin";D:\Program Files\Java\apache-maven-3.5.4\bin;D:\Program Files\Java\apache-tomcat-8.5.38\lib;D:\Program Files\Java\apache-tomcat-8.5.38\bin;D:\Program Files\Java\Git\cmd;C:\Program Files (x86)\Rational\common;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\python\Scripts\;D:\Program Files\python\;C:\Users\qwe\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.5\bin;D:\Program Files\python\PyCharm 2018.3.5\bin;D:\BaiduNetdisk\Fiddler;C:\Users\qwe\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\bin;.]
+1603 [INFO ] 2019-04-24 19:09:24 [main] o.a.c.c.C.[.[.[/demo-0.0.1-SNAPSHOT] - Initializing Spring embedded WebApplicationContext
+1603 [INFO ] 2019-04-24 19:09:24 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 981 ms
+1729 [DEBUG] 2019-04-24 19:09:24 [main] org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+1730 [DEBUG] 2019-04-24 19:09:24 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.ChooseCourse matches criteria [is assignable to Object]
+1730 [DEBUG] 2019-04-24 19:09:24 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Course matches criteria [is assignable to Object]
+1730 [DEBUG] 2019-04-24 19:09:24 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Student matches criteria [is assignable to Object]
+1730 [DEBUG] 2019-04-24 19:09:24 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.Teacher matches criteria [is assignable to Object]
+1730 [DEBUG] 2019-04-24 19:09:24 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.TeacherSeeCourseList matches criteria [is assignable to Object]
+1731 [DEBUG] 2019-04-24 19:09:24 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.User matches criteria [is assignable to Object]
+1731 [DEBUG] 2019-04-24 19:09:24 [main] org.apache.ibatis.io.ResolverUtil - Checking to see if class com.example.demo.entity.adminSeeStudentChooseCourseMsg matches criteria [is assignable to Object]
+1732 [DEBUG] 2019-04-24 19:09:24 [main] o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.example.demo.entity' for aliases
+1829 [DEBUG] 2019-04-24 19:09:25 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\CourseMapper.xml]'
+1836 [DEBUG] 2019-04-24 19:09:25 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\StudentMapper.xml]'
+1841 [DEBUG] 2019-04-24 19:09:25 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\TeacherMapper.xml]'
+1848 [DEBUG] 2019-04-24 19:09:25 [main] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\工作文件存储目录\students\target\classes\mapper\UserMapper.xml]'
+1976 [INFO ] 2019-04-24 19:09:25 [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2060 [DEBUG] 2019-04-24 19:09:25 [main] o.m.s.b.a.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2125 [INFO ] 2019-04-24 19:09:25 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2141 [INFO ] 2019-04-24 19:09:25 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/demo-0.0.1-SNAPSHOT'
+2143 [INFO ] 2019-04-24 19:09:25 [main] com.example.demo.DemoApplication - Started DemoApplication in 2.036 seconds (JVM running for 2.748)
