@@ -2,9 +2,353 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>开启换电站</title>
+
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="bootstrap-4.3.1-dist/js/jquery2.0.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 
+<!-- 添加摄像头模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
+                <h4 class="modal-title" id="myModalLabel">添加摄像头</h4>
+            </div>
+
+<div style="padding-left: 20px">
+            <div style="padding-bottom: 10px">
+                <span>摄像头序列号：</span>
+                <input type="text" id="cameraName" value="">
+                <span id="cameraName1" style="color: brown;"></span>
+            </div>
+
+            <div style="padding-bottom: 10px">
+                <span>摄像头端口：</span>&nbsp;&nbsp;&nbsp;
+                <input type="text" id="cameraPort" >
+                <span id="cameraPort1" style="color: brown;"></span>
+            </div>
+
+            <div style="padding-bottom: 10px">
+                <span>摄&nbsp;像&nbsp;头&nbsp;IP：</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="cameraIp" >
+                <span id="cameraIp1" style="color: brown;"></span>
+            </div>
+
+            <div style="padding-bottom: 10px">
+                <span>换电站名称：</span>&nbsp;&nbsp;&nbsp;
+                <input type="text" id="batteryName" onchange="batteryName()">
+                <div id="batterStation" onclick="addBatteryName(event)">
+                </div>
+                <span id="batteryName1" style="color: brown;"></span>
+                <input id="batteryID" hidden>
+            </div>
+</div>
+
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="addCamera()">添加摄像头</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<div style="padding-top: 100px">
+
+    <div class="checkbox" style="padding: 20px">
+        <label style="padding: 10px">
+            <input type="checkbox" id="all">全选
+        </label>
+        <label style="padding: 10px">
+            <input type="button" id="open" value="开启全部摄像头" onclick="openAllcamera()"  class="btn btn-success">
+            <input type='button' id='updateButton' value='添加摄像头' data-toggle='modal' data-target='#myModal' class="btn btn-success">
+        </label>
+    </div>
+
+<table class="table" >
+    <!--<caption>上下文表格布局</caption>-->
+    <thead>
+    <tr>
+        <th>选择</th>
+        <th>换电站名称</th>
+        <th>摄像头序列号</th>
+        <th>摄像头IP</th>
+        <th>摄像头端口</th>
+        <th>操作</th>
+        <th>状态</th>
+    </tr>
+    </thead>
+    <tbody id="list">
+
+
+    </tbody>
+</table>
+</div>
+
+<script>
+    // <!--全选/反选-->
+    $("#all").click(function(){
+        if(this.checked){
+            $(":checkbox[class='active']").prop("checked", true);
+        }else{
+            $(":checkbox[class='active']").prop("checked", false);
+        }
+    });
+    if ($(":checkbox[class='active']").is(":checked")) {
+        // 存在
+        $(":checkbox[class='active']").prop("checked", true);
+    } else {
+        // 不存在
+        $(":checkbox[class='active']").prop("checked", false);
+    }
+
+    // 获取摄像头信息
+    $(function() {
+    var html ="";
+    $.ajax({
+        type: "GET",
+        url: "http://192.168.6.108:8092/manage/cameraSnap/getAllCamera",
+        dataType: "json", //return dataType: text or json
+        contentType: "application/json",
+        success: function(data) {
+            if (data.code == 2000){
+
+                // console.log(data);
+                for (var i=0;i<data.data.length;i++){
+                    var cameraName = data.data[i].cameraId;
+                    var cameraIP = data.data[i].ip;
+                    var cameraPort = data.data[i].port;
+                    var nativeLong = data.data[i].nativeLong;
+                    var batteryName = data.data[i].stationName;
+
+
+                    html += "<tr id='bottom-text'>";
+                    html += "<td>";
+                    html += "<input type=\"checkbox\" class=\"active\">";
+                    html += "</td>";
+
+                    html += "<td>";
+                    html += batteryName;
+                    html += "</td>";
+
+                    html += "<td>";
+                    html += cameraName;
+                    html += "</td>";
+
+                    html += "<td>";
+                    html += cameraIP;
+                    html += "</td>";
+
+                    html += "<td>";
+                    html += cameraPort;
+                    html += "</td>";
+
+                    html += "<td>";
+                    if(nativeLong !=null){
+                        html += "<input type=\"button\"  value=\"关闭\" onclick='closeCamera(event)' class=\"btn btn-danger\">";
+                    }else if(nativeLong == null){
+                        html += "<input type=\"button\"  value=\"开启\" onclick='openCamera(event)' class=\"btn btn-success\">";
+                    }
+                    html += "</td>";
+
+                    if(nativeLong !=null){
+                        html += "<td>";
+                        html += "<strong>";
+                        html += "开启";
+                        html += "</strong>";
+                        html += "</td>";
+                    }else if (nativeLong == null) {
+                        html += "<td>";
+                        html += "<strong>";
+                        html += "关闭";
+                        html += "</strong>";
+                        html += "</td>";
+                    }
+
+                    html += "</tr>";
+
+                }}
+                $("#list").html(html);
+                }});});
+
+    //开启全部摄像头
+    function openAllcamera() {
+        //判断是否全选了
+        if($("input[type='checkbox']").is(':checked')){
+
+            $.ajax({
+                type: "GET",
+                url: "http://192.168.6.108:8092/manage/cameraSnap/allCameraStart",
+                dataType: "json", //return dataType: text or json
+                contentType: "application/json",
+                success: function(data) {
+                    alert("开启成功");
+                    window.location.reload();
+                }
+            });
+        }else {
+            alert("没有全选！")
+        }
+    };
+
+    //开启单个摄像头
+    function openCamera(event) {
+
+        event.target; //获取事件发生的位置
+        var ip = $(event.target).parents('tr').eq(0).find('td').eq(3).text(); //获取对应的信息的ip
+        var port = $(event.target).parents('tr').eq(0).find('td').eq(4).text(); //获取对应的信息的port
+        // console.log(ip);
+        // console.log(port);
+
+
+        //将端口和IP传到后台
+        $.ajax({
+            type: "GET",
+            url: "http://192.168.6.108:8092/manage/cameraSnap/startCamera",
+            dataType: "json", //return dataType: text or json
+            data: {"ip":ip,"port":port},
+            contentType: "application/json",
+            statusCode: {
+                200: function () {
+                    // alert('登录失效，请重新登录');
+                    window.location.reload();
+                },
+                504: function () {
+                    alert('数据获取/输入失败，服务器没有响应。504');
+                },
+                500: function () {
+                    alert('服务器有误。500');
+                }
+            }
+
+        });
+
+    }
+
+    //关闭
+    function closeCamera(event) {
+
+        event.target; //获取事件发生的位置
+        var cameraName = $(event.target).parents('tr').eq(0).find('td').eq(2).text(); //获取对应的信息的ip
+        var port = $(event.target).parents('tr').eq(0).find('td').eq(3).text(); //获取对应的信息的port
+        // console.log(ip);
+        // console.log(port);
+
+        //关闭摄像头。
+        $.ajax({
+            type: "GET",
+            url: "http://192.168.6.108:8092/manage/cameraSnap/closeCamera",
+            dataType: "json", //return dataType: text or json
+            data: {"cameraName":cameraName},
+            contentType: "application/x-www-form-urlencoded",
+            success: function (data) {
+
+                if(data.code == 2000){
+                    window.location.reload();
+                }
+            }
+        });
+
+    }
+
+    function batteryName() {
+
+        var batteryName1 = $("#batteryName").val();
+        // console.log(batteryName1);
+
+        //获取换电站名称。
+        $.ajax({
+            type: "GET",
+            url: "http://192.168.6.108:8092/manage/battery/replace/stationList",
+            dataType: "json", //return dataType: text or json
+            data: {"pageIndex":"1","pageSize":900,"param":batteryName1},
+            contentType: "application/x-www-form-urlencoded",
+            success: function (data) {
+
+                var html ="";
+                var batteryID = "";
+
+                if (data.code == 2000){
+
+                    console.log(data);
+                    for (var i=0;i<data.data.batteryStation.length;i++){
+
+                        var batteryName = data.data.batteryStation[i].stationName;
+                        var batteryId = data.data.batteryStation[i].stationId;
+
+                        html += "<div style='cursor: pointer;' id="+batteryId+"+"+i+">";
+                        html += batteryName;
+                        html += "<span hidden>";
+                        html += batteryId;
+                        html += "</span>";
+                        html += "</div>";
+
+                    }}
+                $("#batterStation").html(html);
+            }
+        });
+    }
+
+    //动态获取换电站名称
+    function addBatteryName(event) {
+
+        event.target;
+        var batteryName = $(event.target).text();
+        // console.log(batteryName);
+        var batteryId = $(event.target).children().text();
+        // console.log(batteryId);
+        var length = batteryName.length - batteryId.length;
+        $("#batteryName").val(batteryName.slice(0,length));
+        $("#batteryID").val(batteryId);
+
+    }
+// 添加摄像头
+    function addCamera() {
+
+        var addBatteryId = $("#batteryID").val();
+        var addCameraName = $("#cameraName").val();
+        var addCameraPort = $("#cameraPort").val();
+        var addCameraIp = $("#cameraIp").val();
+
+        if(addBatteryName == ""){
+            $("#batteryName1").html("必填");
+            return;
+        }
+        if(addCameraName == ""){
+            $("#cameraName1").html("必填");
+            return;
+        }
+        if(addCameraIp == ""){
+            $("#cameraIp1").html("必填");
+            return;
+        }
+        if(addCameraPort == ""){
+            $("#cameraPort1").html("必填");
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "http://192.168.6.108:8092/manage/cameraSnap/insertCamera",
+            dataType: "json", //return dataType: text or json
+            data: JSON.stringify({"cameraId":addCameraName,"ip":addCameraIp,"port":addCameraPort,"stationId":addBatteryId}),
+            contentType: "application/json",
+            success: function (data) {
+
+                if(data.code=2000){
+                    alert("添加成功");
+                    window.location.reload();
+                }
+                // console.log(data);
+            }
+        });
+    }
+
+
+</script>
 </body>
 </html>
